@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,10 @@ body {
 
 /* Header styles */
 header {
-    background-color: #2A3663;
+    background-color: #0096c7;
     padding: 15px;
     text-align: center;
-    color: white;
+    color: #f1fafe;
 }
 
 header h1 {
@@ -68,13 +68,14 @@ header h1 {
 /* Container for form and map */
 .container {
     padding: 20px;
+    background-color: #f1fafe;
 }
 
 .map-container {
     width: 100%;
     height: 500px;
     margin-top: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #16232a;
 }
 
 /* Form styles */
@@ -83,6 +84,7 @@ form#routeForm {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    color: #16232a;
 }
 
 .location-group {
@@ -92,80 +94,23 @@ form#routeForm {
 #addLocation, #routeForm button[type="submit"] {
     margin: 5px;
     padding: 8px 15px;
-    background-color: #ffffff;
+    background-color: #0096c7;
     border: none;
     border-radius: 4px;
-    color: rgb(0, 0, 0);
+    color: #f1fafe;
     cursor: pointer;
 }
 
 #addLocation:hover, #routeForm button[type="submit"]:hover {
-    background-color: #B59F78;
-}
-
-/* Filter container styles */
-.filter-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.filter-container button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-}
-
-.filter-container button:hover {
-    background-color: #45a049;
-}
-
-/* Card container styles */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding: 15px;
-    font-size: 20px;
-    margin: 0;
-}
-
-.card p {
-    padding: 0 15px 15px;
-    font-size: 14px;
-    color: #555;
+    background-color: #16232a;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #0096c7;
+    color: #e4eef0;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 10px;
 }
 
 footer p {

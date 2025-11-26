@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script> window.chtlConfig = { chatbotId: "9566971368" } </script>
-    <script async data-id="9566971368" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    <script async data-id="9566971368" id="chatling-embed-script" type="text/javascript"
+        src="https://chatling.ai/js/embed.js"></script>
     <style>
         /* Sidebar styles */
         .side-nav {
@@ -17,7 +18,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #333;
+            background-color: #16232a;
             overflow-x: hidden;
             transition: 0.3s;
             padding-top: 60px;
@@ -34,7 +35,8 @@
         }
 
         .side-nav a:hover {
-            background-color: #575757;
+            background-color: #f1fafe;
+            color: #16232a;
         }
 
         .side-nav .close-btn {
@@ -42,12 +44,8 @@
             top: 20px;
             right: 25px;
             font-size: 24px;
-            color: #fff;
+            color: #e4eef0;
             cursor: pointer;
-        }
-
-        .main-content {
-            padding: 20px;
         }
 
         .menu-icon {
@@ -57,7 +55,7 @@
             top: 20px;
             left: 20px;
             z-index: 1100;
-            color: #333;
+            color: #16232a;
         }
     </style>
 </head>
@@ -80,14 +78,9 @@
                 <h1>Pack My Bags</h1>
                 <div class="search-container">
                     <div class="search-bar">
-                        <input
-                            type="text"
-                            id="searchInput"
-                            placeholder="Search tourist spots or locations"
-                            oninput="suggestRecommendations()"
-                        />
+                        <input type="text" id="searchInput" placeholder="Search tourist spots"
+                            oninput="suggestRecommendations()" />
                         <div id="autocomplete-list" class="autocomplete-items"></div>
-                        <a href="#" class="search-button" onclick="searchLocation()">🔍</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +90,7 @@
             <a href="#Mountains" class="filter-button" onclick="filterData('Mountains')">Mountains</a>
             <a href="#Beach" class="filter-button" onclick="filterData('Beach')">Beaches</a>
             <a href="#Cultural" class="filter-button" onclick="filterData('Cultural')">Cultural</a>
-            <a href="anothermap.html" class="filter-button">Search Location</a>
+            <a href="anothermap.html" class="filter-button">See Map</a>
         </div>
 
         <div id="card-container" class="card-container">
